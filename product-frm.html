@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrar Producto</title>
+        <link rel="shortcut icon" href="images/logo.png">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/dashboard.css">
+        <link rel="stylesheet" href="css/product-frm.css">
+    </head>
+    <body>
+        <header>
+            <div class="head-user">
+                <div class="head-title">
+                    <p>ADMIN Serie</p>
+                </div>
+                <p class="usuario-name" id="name"></p>
+                <h1 class="titulo" id="titulo-pg"></h1>
+                <nav class="user-conected">
+                    <a href="" id="conected-user"></a>
+                </nav>
+                <div class="btn-izq">
+                    <a href="dashboard.html" id="btn-atras" class="btn"
+                        type="button">Volver</a>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="formulario-re">
+            <input type="hidden" id="anuncioId" value="0">
+            <input type="hidden" id="imageFileId" value="0">
+            <div class="title">
+                <h1 id="title-pg" class="title-form"></h1>
+            </div>
+            <div class="txt_field">
+                <input class="inputText" type="text" id="inputSerie"
+                    placeholder="Nombre de la Serie">
+            </div>
+            <div class="err-msg" id="validation-name">Debe ingresar el
+                nombre del producto</div>
+            <div class="txt_field">
+                <textarea name="textarea" rows="10" cols="43"
+                    placeholder="Descripción de la Serie" id="inputDesc"></textarea>
+            </div>
+            <div class="err-msg" id="validation-desc">Ingrese una
+                descripción del Producto</div>
+            <div class="txt_field">
+                <input class="inputText" type="text" id="inputimagennombre"
+                    placeholder="imagenNombre">
+            </div>
+            <div class="err-msg" id="validation-price">Debe ingresar el
+                precio</div>
+            <div class="txt_field">
+                <select name="categoria" id="inputCategoria">
+                    <option value="Comedia">
+                        Comedia
+                    </option>
+                    <option value="Accion">
+                        Electrodomesticos
+                    </option>
+                    <option value="Drama">
+                        Drama
+                    </option>
+                    <option value="Animacion">
+                        Animacion
+                    </option>
+                    <option value="Terror">
+                        Terror
+                    </option>
+                    <option value="Hogar">
+                        Hogar
+                    </option>
+                    <option value="Todo Publico">
+                        Todo Publico
+                    </option>
+                    <option value="+18">
+                        +18
+                    </option>
+                    <option value="Moda">
+                        Moda
+                    </option>
+                    <option value="Bailes">
+                        Bailes
+                    </option>
+                    <option value="Varios">
+                        Varios
+                    </option>
+                </select>
+            </div>
+            <div class="txt_field">
+                <input class="inputText" type="text" id="inputCel"
+                    placeholder="Telefono o Celular">
+            </div>
+            <div class="err-msg" id="validation-cel">Debe ingresar su
+                Número celular</div>
+            <div class="txt_field">
+                <select name="estado" id="inputEstado">
+                    <option value="Publicar">
+                        Publicar
+                    </option>
+                    <option value="No Publicar">
+                        No Publicar
+                    </option>
+                </select>
+            </div>
+            <div class="txt_field">
+
+                <div class="form-group">
+                    <label for="nombreContacto">Imagen</label>
+                    <div class="contacto-img">
+                        <img src="images/producto_default.png" alt="User Image"
+                            id="image">
+                    </div>
+                    <input class="form-control" type="file" id="image-file">
+                </div>
+            </div>
+
+            <div class="alert" id="msg-error-regis" style="display: none"
+                role="alert">Ocurrio un error al guardar el Anuncio</div>
+            <input type="button" value='Guardar' id='btn-save' class="btn
+                btn-primary">
+            <a href="dashboard.html" class="btn">Cancelar</a>
+        </div>
+
+        <script src="js/anuncio-frm.js"></script>
+    </body>
+</html>

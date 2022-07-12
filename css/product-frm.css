@@ -1,0 +1,25 @@
+.formulario-re{
+    width: 1200px;
+    margin: 0px auto 0px auto;
+}
+
+.txt_field{
+    margin-top: 20px;
+}
+
+.inputText{
+    width: 300px;
+    height: 30px;
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
+    background-clip: padding-box;
+    padding: .375rem .75rem;
+}
+
+textarea{
+    resize: none;
+}
+
+.err-msg{
+    display: none;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styless.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Bienvenido a mi Formulario</title>
+</head>
+
+<body>
+    <div class="container-form sign-up">
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido a TortillaStream</h2>
+                <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
+                <button class="sign-up-btn" >Iniciar Session</button>
+            </div>
+        </div>
+        <form class="formulario" id="formulario">
+            <h2 class="create-account">Crear una cuenta</h2>
+            
+            <p class="cuenta-gratis">Crear una cuenta gratis</p>
+            
+            <input type="text" placeholder="Nombre" id="inputName" >
+            <div class="err-msg" id="validation-name">
+                Debe ingresar su Nombre
+            </div>
+            <input type="text" placeholder="Username" id="inputUser">
+            <div class="err-msg" id="validation-username">
+                Debe ingresar un nombre de usuario
+            </div>
+            <input type="password" placeholder="Contraseña" id="inputPassword">
+            <div class="err-msg" id="validation-password">
+                Debe ingresar una contraseña
+            </div>
+            <input type="password" placeholder="Nuevamente la Contraseña" id="inputPasswordSecond" id="inputPasswordSecond">
+            <div class="err-msg" id="validation-password-second">
+                Vuelva a ingresar la contraseña
+            </div>
+            <div class="alert" id="msg-error-regis" style="display: none" role="alert"></div>
+            <input id="btn-regis" class="btn" type="button" value="Registrarse" name="submit">
+        </form>
+    </div>
+    <div class="container-form sign-in">
+        <form class="formulario">
+            <h2 class="create-account">Iniciar Sesion</h2>
+            
+            <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+            <input type="usuario" placeholder="Ingrese su nombre de usuario" id="inputUsername">
+            <div class="err-msg" id="validation-username" style="display: none;">
+                Debe ingresar su nombre de usuario
+            </div>
+            <input type="password" placeholder="Contraseña" id="inputPassword"  autocomplete="on">
+            <div class="err-msg" id="validation-password" >
+                Debe ingresar su contraseña
+            </div>
+            <input type="button" value="Iniciar Sesion" id="btn-login" >
+            <a href="index.html">atras</a>    
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido de nuevo</h2>
+                <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+                <button class="sign-in-btn">Registrarse</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/loginT.js"></script>
+    <script src="js/user-register.js"></script>
+    
+</body>
+
+</html>
